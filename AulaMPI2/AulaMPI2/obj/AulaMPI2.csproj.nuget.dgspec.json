@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\workspace\\CSharp\\Parallel\\AulaMPI2\\AulaMPI2\\AulaMPI2.csproj": {}
+    "D:\\workspace\\CSharp\\Parallel\\unifor_concorrente\\AulaMPI2\\AulaMPI2\\AulaMPI2.csproj": {}
   },
   "projects": {
-    "D:\\workspace\\CSharp\\Parallel\\AulaMPI2\\AulaMPI2\\AulaMPI2.csproj": {
+    "D:\\workspace\\CSharp\\Parallel\\unifor_concorrente\\AulaMPI2\\AulaMPI2\\AulaMPI2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\workspace\\CSharp\\Parallel\\AulaMPI2\\AulaMPI2\\AulaMPI2.csproj",
+        "projectUniqueName": "D:\\workspace\\CSharp\\Parallel\\unifor_concorrente\\AulaMPI2\\AulaMPI2\\AulaMPI2.csproj",
         "projectName": "AulaMPI2",
-        "projectPath": "D:\\workspace\\CSharp\\Parallel\\AulaMPI2\\AulaMPI2\\AulaMPI2.csproj",
+        "projectPath": "D:\\workspace\\CSharp\\Parallel\\unifor_concorrente\\AulaMPI2\\AulaMPI2\\AulaMPI2.csproj",
         "packagesPath": "C:\\Users\\cenez\\.nuget\\packages\\",
-        "outputPath": "D:\\workspace\\CSharp\\Parallel\\AulaMPI2\\AulaMPI2\\obj\\",
+        "outputPath": "D:\\workspace\\CSharp\\Parallel\\unifor_concorrente\\AulaMPI2\\AulaMPI2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

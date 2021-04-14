@@ -6,7 +6,9 @@ namespace AulaMPI2 {
             MPITest app = new MPITest();
             app.mpi_start();
 
-            app.reduce();
+            //app.reduce();
+            //app.allReduce();
+            app.iSendReceive();
 
             app.mpi_stop();
         }
