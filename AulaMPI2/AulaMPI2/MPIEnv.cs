@@ -21,7 +21,7 @@ namespace AulaMPI2 {
         }
         public static void mpi_stop() { Mpi.Dispose(); }
 
-        /*
+        /*// Aula anterior
         public static void reduce() {
             Console.WriteLine("Meu id é: " + Rank + " size: " + Size);
 

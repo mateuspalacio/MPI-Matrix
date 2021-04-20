@@ -8,7 +8,7 @@ namespace AulaMPI2 {
         public static readonly int N = 16; // Nro de matrizes para multiplicar
         public static int MIN = 5;
         public static int MAX = 10;
-        public static string file = "D:\\workspace\\CSharp\\Parallel\\unifor_concorrente\\AulaMPI2\\AulaMPI2\\matrix"+N+".txt";
+        public static string file = "D:\\tmp\\matrizes\\matrix" + N+".txt";
 
         public static void Main(string[] args) {
             MPIEnv.mpi_start();
@@ -45,7 +45,7 @@ namespace AulaMPI2 {
             }
             return s;
         }
-        /*
+        /* // Aula anterior
         public static void test1() {
             //var lc = Generator.Gen(file, N, MIN, MAX);
             MPIEnv.reduce();
