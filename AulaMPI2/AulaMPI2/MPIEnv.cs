@@ -21,14 +21,13 @@ namespace AulaMPI2 {
         }
         public static void mpi_stop() { Mpi.Dispose(); }
 
-        /*// Aula anterior
         public static void reduce() {
             Console.WriteLine("Meu id é: " + Rank + " size: " + Size);
 
-            int valor = Rank+1;
+            int valor = Rank + 1;
             valor = Comm_world.Reduce<int>(valor, Operation<int>.Add, Root);
             if (Rank == Root) {
-                Console.WriteLine("Eu sou o node "+Rank+"!!! O valor é: " + valor);
+                Console.WriteLine("Eu sou o node " + Rank + "!!! O valor é: " + valor);
             }
             Comm_world.Barrier(); // Tarefas vao aguardar aqui
         }
@@ -38,7 +37,7 @@ namespace AulaMPI2 {
             var data = new ulong[n];
             Random r = new Random();
             for (int i = 0; i < n; i++) {
-                data[i] = (ulong) r.Next(1, 1000);
+                data[i] = (ulong)r.Next(1, 1000);
             }
 
             var resultado = new ulong[n];
@@ -81,6 +80,36 @@ namespace AulaMPI2 {
             Console.WriteLine(s);
 
         }
-        */
+        public static void broadcast(int n) {
+            double[] valores = new double[n];// ROOT={0, 10, 20, 30, 40}, demais={0,0,0,0,0}
+            if (MPIEnv.Rank == MPIEnv.Root) {
+                for (int i = 0; i < valores.Length; i++)
+                    valores[i] = i * 10;
+            }
+            MPIEnv.Comm_world.Broadcast<double[]>(ref valores, MPIEnv.Root);
+            MPIEnv.Comm_world.Barrier();
+
+            string s = "node" + MPIEnv.Rank + " ";
+            for (int i = 0; i < valores.Length; i++)
+                s += valores[i] + " ";
+            Console.WriteLine(s);
+
+        }
+        public static void scatter() {
+            int[] values = new int[MPIEnv.Size]; // {0, 0, 0, 0}
+            if (MPIEnv.Rank == MPIEnv.Root) {
+                for (int i = 0; i < values.Length; i++) {
+                    values[i] = (i + 1) * 10; // {10,20,30,40}
+                }
+            }
+            int valor = MPIEnv.Comm_world.Scatter<int>(values, MPIEnv.Root);
+            MPIEnv.Comm_world.Barrier();
+
+            string s = "scatter: node " + MPIEnv.Rank + " -> ";
+            for (int i = 0; i < values.Length; i++)
+                s += values[i] + " ";
+            Console.WriteLine(s + " valor: " + valor);
+
+        }
     }
 }

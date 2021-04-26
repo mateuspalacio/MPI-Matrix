@@ -46,16 +46,16 @@ namespace AulaMPI2 {
             return s;
         }
         /* // Aula anterior
+        */
         public static void test1() {
             //var lc = Generator.Gen(file, N, MIN, MAX);
-            MPIEnv.reduce();
-            MPIEnv.allReduce();
-            MPIEnv.immediateSendReceive();
-            //MPIEnv.broadcast();
-            //MPIEnv.scatter();
+            //MPIEnv.reduce();
+            //MPIEnv.allReduce();
+            //MPIEnv.immediateSendReceive();
+            //MPIEnv.broadcast(10);
+            MPIEnv.scatter();
             //MPIEnv.allGather();
             //MPIEnv.allToAll();
         }
-        */
     }
 }
