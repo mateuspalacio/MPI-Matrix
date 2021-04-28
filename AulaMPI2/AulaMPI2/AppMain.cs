@@ -12,8 +12,8 @@ namespace AulaMPI2 {
 
         public static void Main(string[] args) {
             MPIEnv.mpi_start();
-            //test1();
-            test2();
+            test1();
+            //test2();
             MPIEnv.mpi_stop();
         }
         public static void test2() {
@@ -53,9 +53,9 @@ namespace AulaMPI2 {
             //MPIEnv.allReduce();
             //MPIEnv.immediateSendReceive();
             //MPIEnv.broadcast(10);
-            MPIEnv.scatter();
+            //MPIEnv.scatter();
             //MPIEnv.allGather();
-            //MPIEnv.allToAll();
+            MPIEnv.allToAll();
         }
     }
 }
