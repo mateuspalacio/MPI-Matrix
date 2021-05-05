@@ -5,7 +5,7 @@ using System.Collections.Generic;
 namespace AulaMPI2 {
     public class AppMain {
         // Gerador de matriz:
-        public static readonly int N = 4; // Nro de matrizes para multiplicar
+        public static readonly int N = 16; // Nro de matrizes para multiplicar
         public static int MIN = 5;
         public static int MAX = 10;
         public static string file = "D:\\Projetos College\\unifor_concorrente\\AulaMPI2\\AulaMPI2\\tmp\\matrizes\\matrix" + N+".txt";
@@ -14,8 +14,8 @@ namespace AulaMPI2 {
             try
             {
                 MPIEnv.mpi_start();
-                test1();
-                //test2();
+                //test1();
+                test2();
                 MPIEnv.mpi_stop();
             }
             catch (Exception e)
@@ -29,32 +29,32 @@ namespace AulaMPI2 {
             Splitter splitter = new Splitter();
             List<ulong[][]> ms = Generator.MatrixList(file);
 
-            
-                if (MPIEnv.Rank == MPIEnv.Root)
-                {
-                    for (int i = 0; i < ms.Count; i++)
-                        lista.Add(ms[i]);
-                }
-                List<object> bloco = splitter.Splitting(lista);
-                if (bloco != null)
-                {
-                    Console.WriteLine("Rank" + MPIEnv.Rank + ":\n" + printMatrix(bloco));
-                }
+
+            if (MPIEnv.Rank == MPIEnv.Root)
+            {
+                for (int i = 0; i < ms.Count; i++)
+                    lista.Add(ms[i]);
+            }
+            ulong[][] bloco = splitter.Splitting(lista);
+            Console.WriteLine("Rank" + MPIEnv.Rank + ":\n" + printMatrix(bloco));
 
 
         }
-        public static string printMatrix(List<object> lista) {
+        public static string printMatrix(ulong[][] ms)
+        {
             string s = "";
-            foreach (object o in lista) {
-                ulong[][] ms = (ulong[][])o;
-                s += ms.Length + " x " + ms[0].Length + "\n";
-                foreach (var a in ms) {
-                    foreach (var b in a) {
-                        s = s + b + " ";
-                    }
-                    s = s + "\n";
+            //foreach (object o in lista) {
+            //ulong[][] ms = (ulong[][])o;
+            s += ms.Length + " x " + ms[0].Length + "\n";
+            foreach (var a in ms)
+            {
+                foreach (var b in a)
+                {
+                    s = s + b + " ";
                 }
+                s = s + "\n";
             }
+            //}
             return s;
         }
         /* // Aula anterior

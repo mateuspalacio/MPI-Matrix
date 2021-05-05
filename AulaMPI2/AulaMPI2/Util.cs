@@ -5,11 +5,11 @@ using System.Text;
 namespace AulaMPI2 {
     public class Util {
         public static ulong[][] multiply(ulong[][] A, ulong[][] B) {
-            int a_rows = A.GetLength(0); // Linha A
-            int b_cols = B.GetLength(1); // Coluna B
-            int n = A.GetLength(1);// Coluna A, Linha B
+            int a_rows = A.Length; // Linha A
+            int b_cols = B[0].Length; // Coluna B
+            int n = A[0].Length;// Coluna A, Linha B
 
-            if (n != B.GetLength(0)) // Linha B!=n ?
+            if (n != B.Length) // Linha B!=n ?
                 throw new Exception("A.columns != B.rows");
 
             ulong[][] C = new ulong[a_rows][];//, b_cols];
