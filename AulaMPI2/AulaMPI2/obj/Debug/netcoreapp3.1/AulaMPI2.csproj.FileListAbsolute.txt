@@ -26,3 +26,17 @@ D:\workspace\CSharp\Parallel\unifor_concorrente\AulaMPI2\AulaMPI2\obj\Debug\netc
 D:\workspace\CSharp\Parallel\unifor_concorrente\AulaMPI2\AulaMPI2\obj\Debug\netcoreapp3.1\AulaMPI2.dll
 D:\workspace\CSharp\Parallel\unifor_concorrente\AulaMPI2\AulaMPI2\obj\Debug\netcoreapp3.1\AulaMPI2.pdb
 D:\workspace\CSharp\Parallel\unifor_concorrente\AulaMPI2\AulaMPI2\obj\Debug\netcoreapp3.1\AulaMPI2.genruntimeconfig.cache
+D:\Projetos College\unifor_concorrente\AulaMPI2\bin\netcoreapp3.1\AulaMPI2.exe
+D:\Projetos College\unifor_concorrente\AulaMPI2\bin\netcoreapp3.1\AulaMPI2.deps.json
+D:\Projetos College\unifor_concorrente\AulaMPI2\bin\netcoreapp3.1\AulaMPI2.runtimeconfig.json
+D:\Projetos College\unifor_concorrente\AulaMPI2\bin\netcoreapp3.1\AulaMPI2.runtimeconfig.dev.json
+D:\Projetos College\unifor_concorrente\AulaMPI2\bin\netcoreapp3.1\AulaMPI2.dll
+D:\Projetos College\unifor_concorrente\AulaMPI2\bin\netcoreapp3.1\AulaMPI2.pdb
+D:\Projetos College\unifor_concorrente\AulaMPI2\AulaMPI2\obj\Debug\netcoreapp3.1\AulaMPI2.csprojAssemblyReference.cache
+D:\Projetos College\unifor_concorrente\AulaMPI2\AulaMPI2\obj\Debug\netcoreapp3.1\AulaMPI2.AssemblyInfoInputs.cache
+D:\Projetos College\unifor_concorrente\AulaMPI2\AulaMPI2\obj\Debug\netcoreapp3.1\AulaMPI2.AssemblyInfo.cs
+D:\Projetos College\unifor_concorrente\AulaMPI2\AulaMPI2\obj\Debug\netcoreapp3.1\AulaMPI2.csproj.CoreCompileInputs.cache
+D:\Projetos College\unifor_concorrente\AulaMPI2\AulaMPI2\obj\Debug\netcoreapp3.1\AulaMPI2.csproj.CopyComplete
+D:\Projetos College\unifor_concorrente\AulaMPI2\AulaMPI2\obj\Debug\netcoreapp3.1\AulaMPI2.dll
+D:\Projetos College\unifor_concorrente\AulaMPI2\AulaMPI2\obj\Debug\netcoreapp3.1\AulaMPI2.pdb
+D:\Projetos College\unifor_concorrente\AulaMPI2\AulaMPI2\obj\Debug\netcoreapp3.1\AulaMPI2.genruntimeconfig.cache

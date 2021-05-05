@@ -5,31 +5,43 @@ using System.Collections.Generic;
 namespace AulaMPI2 {
     public class AppMain {
         // Gerador de matriz:
-        public static readonly int N = 16; // Nro de matrizes para multiplicar
+        public static readonly int N = 4; // Nro de matrizes para multiplicar
         public static int MIN = 5;
         public static int MAX = 10;
-        public static string file = "D:\\tmp\\matrizes\\matrix" + N+".txt";
+        public static string file = "D:\\Projetos College\\unifor_concorrente\\AulaMPI2\\AulaMPI2\\tmp\\matrizes\\matrix" + N+".txt";
 
         public static void Main(string[] args) {
-            MPIEnv.mpi_start();
-            test1();
-            //test2();
-            MPIEnv.mpi_stop();
+            try
+            {
+                MPIEnv.mpi_start();
+                test1();
+                //test2();
+                MPIEnv.mpi_stop();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
+            Guid.NewGuid();
         }
         public static void test2() {
             List<object> lista = new List<object>();
             Splitter splitter = new Splitter();
             List<ulong[][]> ms = Generator.MatrixList(file);
 
+            
+                if (MPIEnv.Rank == MPIEnv.Root)
+                {
+                    for (int i = 0; i < ms.Count; i++)
+                        lista.Add(ms[i]);
+                }
+                List<object> bloco = splitter.Splitting(lista);
+                if (bloco != null)
+                {
+                    Console.WriteLine("Rank" + MPIEnv.Rank + ":\n" + printMatrix(bloco));
+                }
 
-            if (MPIEnv.Rank == MPIEnv.Root) {
-                for (int i = 0; i < ms.Count; i++)
-                    lista.Add(ms[i]);
-            }
-            List<object> bloco = splitter.Splitting(lista);
-            if (bloco != null) { 
-                Console.WriteLine("Rank" + MPIEnv.Rank + ":\n" + printMatrix(bloco));
-            }
+
         }
         public static string printMatrix(List<object> lista) {
             string s = "";
@@ -48,7 +60,7 @@ namespace AulaMPI2 {
         /* // Aula anterior
         */
         public static void test1() {
-            //var lc = Generator.Gen(file, N, MIN, MAX);
+            var lc = Generator.Gen(file, N, MIN, MAX);
             //MPIEnv.reduce();
             //MPIEnv.allReduce();
             //MPIEnv.immediateSendReceive();
