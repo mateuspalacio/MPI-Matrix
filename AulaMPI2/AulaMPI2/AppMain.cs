@@ -35,8 +35,8 @@ namespace AulaMPI2 {
                 for (int i = 0; i < ms.Count; i++)
                     lista.Add(ms[i]);
             }
-            ulong[][] bloco = splitter.Splitting(lista);
-            Console.WriteLine("Rank" + MPIEnv.Rank + ":\n" + printMatrix(bloco));
+            List<ulong[][]> bloco = splitter.Splitting(lista);
+            Console.WriteLine("Rank" + MPIEnv.Rank + ":\n" + printMatrix(bloco[0]));
 
 
         }

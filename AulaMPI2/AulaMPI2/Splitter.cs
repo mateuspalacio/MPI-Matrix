@@ -7,11 +7,11 @@ namespace AulaMPI2
 {
     public class Splitter
     {
-        private static int cont = 0;
-        private static bool pass = true;
-        public ulong[][] Splitting(List<object> lista)
+        private static ulong[][] rootM;
+        public List<ulong[][]> Splitting(List<object> lista)
         {
             int num_nodes = MPIEnv.Size;
+           
             int len_partition = lista.Count / num_nodes;
             RequestList bag = new RequestList();
             if (MPIEnv.Rank == MPIEnv.Root)
@@ -48,18 +48,21 @@ namespace AulaMPI2
             }
 
             object r = MPIEnv.Comm_world.Receive<object>(MPIEnv.Root, TAGs.DIST_GERAL);
-            bag.WaitAll();
-
-            List<ulong[][]> ms = new List<ulong[][]>();
             MMulti(r);
-            while (pass) {
+
+            bag.WaitAll();
+            List<ulong[][]> ms = new List<ulong[][]>();
+
                 if (MPIEnv.Root == MPIEnv.Rank)
                 {
                     for (int i = 1; i < MPIEnv.Size; i++)
                     {
                         ms.Add(MPIEnv.Comm_world.Receive<ulong[][]>(i, 0));
+                        Console.WriteLine("eu entrei no receive");
+
                     }
                     List<ulong[][]> listM = new List<ulong[][]>();
+                    listM.Add(rootM);
                     foreach (ulong[][] m in ms)
                     {
                         listM.Add(m);
@@ -68,14 +71,19 @@ namespace AulaMPI2
                             ulong[][] res = Util.multiply(listM[0], listM[1]);
                             listM = new List<ulong[][]>();
                             listM.Add(res);
+                            Console.WriteLine("eu entrei no list add");
+
                         }
                     }
                     ms = listM;
+                    verdade = false;
+                    Console.WriteLine("eu entrei no if");
+
                 }
-            }
             
 
-            return ms[0];
+
+            return ms;
         }
         ulong[][] res = null;
         private List<ulong[][]> MMulti(object r)
@@ -93,21 +101,25 @@ namespace AulaMPI2
                         res = Util.multiply(ms[0], ms[1]);
                         ms = new List<ulong[][]>();
                         ms.Add(res);
+                        if(MPIEnv.Rank == MPIEnv.Root)
+                        {
+                            Console.WriteLine("entrouuuu");
+                        }
                     }
                 }
             }
-
+            if (MPIEnv.Rank == MPIEnv.Root)
+            {
+                rootM = ms[0];
+                Console.WriteLine("entrouuuddsdsdu");
+            }
             for (int i = 1; i < MPIEnv.Size; i++)
             {
                 if (i == MPIEnv.Rank)
                 {
                     MPIEnv.Comm_world.Send<ulong[][]>(ms[0], 0, 0);
-                    cont++;
                 }
-                if (MPIEnv.Size == cont)
-                {
-                    pass = false;
-                }
+
             }
             return ms;
         }
