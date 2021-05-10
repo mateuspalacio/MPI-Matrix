@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ITNzQEYQSNZ4CZ9omADXM6kl8DNAAhsTDVWBFcPRFGKK7TqJ0S89OzPBGg1hX6AFUgHVy/4iwYi3vLYuOBeFIQ==",
+  "dgSpecHash": "+I2TQVmufhAufVyfj0JsiGyCRM1l20nUcnmmA58WnHTYJLZyNzwLGl0skmrF26D1c4KA7Kjhpo7KFkmAQMkgMA==",
   "success": true,
-  "projectFilePath": "D:\\Projetos College\\unifor_concorrente\\AulaMPI2\\AulaMPI2\\AulaMPI2.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\USUARIO\\Documents\\Programs\\Comp Paralela\\MPI-Matrix\\AulaMPI2\\AulaMPI2\\AulaMPI2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\USUARIO\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.14\\microsoft.netcore.app.host.win-x64.3.1.14.nupkg.sha512"
+  ],
   "logs": []
 }

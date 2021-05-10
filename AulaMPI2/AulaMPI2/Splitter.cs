@@ -109,7 +109,7 @@ namespace AulaMPI2
             {
                 if (i == MPIEnv.Rank)
                 {
-                    MPIEnv.Comm_world.Send<ulong[][]>(ms[0], 0, 0);
+                    MPIEnv.Comm_world.Send<ulong[][]>(ms[0], MPIEnv.Root, 0);
                 }
 
             }

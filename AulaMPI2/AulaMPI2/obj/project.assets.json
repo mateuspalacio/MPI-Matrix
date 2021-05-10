@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\mateu\\.nuget\\packages\\": {}
+    "C:\\Users\\USUARIO\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projetos College\\unifor_concorrente\\AulaMPI2\\AulaMPI2\\AulaMPI2.csproj",
+      "projectUniqueName": "C:\\Users\\USUARIO\\Documents\\Programs\\Comp Paralela\\MPI-Matrix\\AulaMPI2\\AulaMPI2\\AulaMPI2.csproj",
       "projectName": "AulaMPI2",
-      "projectPath": "D:\\Projetos College\\unifor_concorrente\\AulaMPI2\\AulaMPI2\\AulaMPI2.csproj",
-      "packagesPath": "C:\\Users\\mateu\\.nuget\\packages\\",
-      "outputPath": "D:\\Projetos College\\unifor_concorrente\\AulaMPI2\\AulaMPI2\\obj\\",
+      "projectPath": "C:\\Users\\USUARIO\\Documents\\Programs\\Comp Paralela\\MPI-Matrix\\AulaMPI2\\AulaMPI2\\AulaMPI2.csproj",
+      "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\USUARIO\\Documents\\Programs\\Comp Paralela\\MPI-Matrix\\AulaMPI2\\AulaMPI2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mateu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -55,12 +55,18 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[3.1.14, 3.1.14]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

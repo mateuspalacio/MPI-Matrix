@@ -40,3 +40,17 @@ D:\Projetos College\unifor_concorrente\AulaMPI2\AulaMPI2\obj\Debug\netcoreapp3.1
 D:\Projetos College\unifor_concorrente\AulaMPI2\AulaMPI2\obj\Debug\netcoreapp3.1\AulaMPI2.dll
 D:\Projetos College\unifor_concorrente\AulaMPI2\AulaMPI2\obj\Debug\netcoreapp3.1\AulaMPI2.pdb
 D:\Projetos College\unifor_concorrente\AulaMPI2\AulaMPI2\obj\Debug\netcoreapp3.1\AulaMPI2.genruntimeconfig.cache
+C:\Users\USUARIO\Documents\Programs\Comp Paralela\MPI-Matrix\AulaMPI2\bin\netcoreapp3.1\AulaMPI2.exe
+C:\Users\USUARIO\Documents\Programs\Comp Paralela\MPI-Matrix\AulaMPI2\bin\netcoreapp3.1\AulaMPI2.deps.json
+C:\Users\USUARIO\Documents\Programs\Comp Paralela\MPI-Matrix\AulaMPI2\bin\netcoreapp3.1\AulaMPI2.runtimeconfig.json
+C:\Users\USUARIO\Documents\Programs\Comp Paralela\MPI-Matrix\AulaMPI2\bin\netcoreapp3.1\AulaMPI2.runtimeconfig.dev.json
+C:\Users\USUARIO\Documents\Programs\Comp Paralela\MPI-Matrix\AulaMPI2\bin\netcoreapp3.1\AulaMPI2.dll
+C:\Users\USUARIO\Documents\Programs\Comp Paralela\MPI-Matrix\AulaMPI2\bin\netcoreapp3.1\AulaMPI2.pdb
+C:\Users\USUARIO\Documents\Programs\Comp Paralela\MPI-Matrix\AulaMPI2\AulaMPI2\obj\Debug\netcoreapp3.1\AulaMPI2.csprojAssemblyReference.cache
+C:\Users\USUARIO\Documents\Programs\Comp Paralela\MPI-Matrix\AulaMPI2\AulaMPI2\obj\Debug\netcoreapp3.1\AulaMPI2.AssemblyInfoInputs.cache
+C:\Users\USUARIO\Documents\Programs\Comp Paralela\MPI-Matrix\AulaMPI2\AulaMPI2\obj\Debug\netcoreapp3.1\AulaMPI2.AssemblyInfo.cs
+C:\Users\USUARIO\Documents\Programs\Comp Paralela\MPI-Matrix\AulaMPI2\AulaMPI2\obj\Debug\netcoreapp3.1\AulaMPI2.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Documents\Programs\Comp Paralela\MPI-Matrix\AulaMPI2\AulaMPI2\obj\Debug\netcoreapp3.1\AulaMPI2.csproj.CopyComplete
+C:\Users\USUARIO\Documents\Programs\Comp Paralela\MPI-Matrix\AulaMPI2\AulaMPI2\obj\Debug\netcoreapp3.1\AulaMPI2.dll
+C:\Users\USUARIO\Documents\Programs\Comp Paralela\MPI-Matrix\AulaMPI2\AulaMPI2\obj\Debug\netcoreapp3.1\AulaMPI2.pdb
+C:\Users\USUARIO\Documents\Programs\Comp Paralela\MPI-Matrix\AulaMPI2\AulaMPI2\obj\Debug\netcoreapp3.1\AulaMPI2.genruntimeconfig.cache
